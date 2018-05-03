@@ -191,11 +191,11 @@ def count_column_value(column_list):
     """
     data = {}
     for column in column_list:
-        if column:
-            try:
-                data[column] += 1
-            except KeyError:
-                data[column] = 1
+        key = column if column else 'N/A'
+        try:
+            data[key] += 1
+        except KeyError:
+            data[key] = 1
     return data
 
 
@@ -387,9 +387,6 @@ def count_items(column_list):
 
 
 if answer == "yes":
-    print("Possíveis valores: ", set(column_to_list(data_list, -2)))
-    print("Não concordo com o assertion, valores em branco não são gêneros.")
-
     # ------------ NÃO MUDE NENHUM CÓDIGO AQUI ------------
     column_list = column_to_list(data_list, -2)
     types, counts = count_items(column_list)
