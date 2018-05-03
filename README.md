@@ -4,7 +4,7 @@ Minha solução para o exercicío Chicago Bikeshare do Programa Nanodegree Funda
 
 # Dependências
 
-[matplotlib](matplotlibhttps://matplotlib.org/faq/installing_faq.html)
+[matplotlib](https://matplotlib.org/faq/installing_faq.html)
 
 # Como executar
 
